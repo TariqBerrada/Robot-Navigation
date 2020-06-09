@@ -1,0 +1,10 @@
+bound_min:
+  x: -5
+  y: -5
+bound_max:
+  x: 5
+  y: 5
+
+robot_name: "robot_arrow"
+
+obstacles: []

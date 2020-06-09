@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<launch>
+
+    <arg name="joy_dev" default="/dev/input/js0"/>
+    <arg name="scale_linear" default="0.5"/>
+    <arg name="scale_angular" default="1.82"/>
+  
+    <!-- Joystick driver -->
+    <node pkg="joy" type="joy_node" name="joy_node">
+        <param name="dev" value="$(arg joy_dev)"/>
+        <param name="dev_ff" value=""/>  <!-- suppress erroneous error message -->
+        <param name="deadzone" value="0.1"/>
+        <param name="autorepeat_rate" value="20"/>
+    </node>
+
+    <!-- Teleop joy node -->
+    <node pkg="projet_youbot_pkg" type="teleop_joy.py" name="teleop_joy">
+        <remap from="youbot_teleop" to="cmd_vel"/>
+        <param name="scale_linear" value="$(arg scale_linear)"/>
+        <param name="scale_angular" value="$(arg scale_angular)"/>
+    </node>
+
+</launch>

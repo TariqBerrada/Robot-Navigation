@@ -1,0 +1,7 @@
+# ordered robot polygon coordinates relative to position (0,0)
+relative_robot_polygon:
+- [-0.5, -0.5]
+- [0.5, -0.5]
+- [0.5, 0.5]
+- [0, 0.75]
+- [-0.5, 0.5]

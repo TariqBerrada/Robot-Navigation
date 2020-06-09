@@ -1,0 +1,25 @@
+# Example of how a world should be specified
+
+# world bounds
+bound_min:
+  x: -5
+  y: -5
+bound_max:
+  x: 5
+  y: 5
+
+# name of the yaml file describing the robot polygon
+robot_name: "robot_arrow"
+
+# ordered obstacle coordinates for all obstacles in the world
+obstacles:
+# obstacle 1
+- - [-5, -0.5]
+  - [5, -0.5]
+  - [5, 0.5]
+  - [-5, 0.5]
+# obstacle 2
+- - [3, 3]
+  - [4, 3]
+  - [4, 4]
+  - [3, 4]
