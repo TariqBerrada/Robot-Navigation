@@ -4,6 +4,16 @@ Planification et exécution de trajectoire pour la manipulation d'objets encombr
 
 Auteurs : Tariq Berrada, Julien Perichon, Nicolas Risse
 
+## Exemple de résultat
+
+Animation du mouvement du robot:
+
+![](rrt_star_2D.gif)
+
+arbre généré par RRT* dans l'espace d'état *(x, y, theta)*.
+
+![](rrt_star_3D.gif)
+
 ## Liens utiles
 
 - Shapely, pour avoir une API qui permet de gérer facilement un ensemble de polygones : https://shapely.readthedocs.io/en/stable/index.html 
@@ -61,3 +71,7 @@ N'hésitez pas à créer un launch file dédié sur le youbot qui démarre uniqu
 
 - [1] https://github.com/youbot/youbot_driver_ros_interface/tree/indigo-devel/launch
 - [2] https://github.com/youbot/youbot_simulation
+
+## Exemple de résultat
+![](rrt_star_2D.gif)
+![](rrt_star_3D.gif)
